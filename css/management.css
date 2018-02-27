@@ -1,0 +1,158 @@
+body {
+    background-color: #8c2d2d;
+}
+@media (max-width:480px){
+    /**/
+    section{
+        padding: 40px 0;
+        display: block;
+        position: relative;
+    }
+    .section-header{
+        position: relative;
+        display: block;
+    }
+    .section-header::before{
+        position: absolute;
+        content: " ";
+        background: url("../img/pattern-top01.png");
+        width: 200px;
+        top: -40px;
+        margin: auto;
+        height: 31px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section1 {
+        padding-bottom: 30px;
+        padding-top: 60px;
+    }
+    .section1-banner {
+        background-image: url(../img/management/management-bnr.png);
+        background-size: cover;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .section-header h2{
+        font-family: 'TheSans-8ExtraBold';
+        font-size: 54px;
+        line-height: 45px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .cust-txt {
+        font-family: 'TheSans-6SemiBold';
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .icon-header {
+        width: 100%;
+    }
+    .arrow-down {
+        width: 40px;
+        height: 30px;
+        margin: 0 auto 40px;
+        display: table;
+    }
+    .arrow-down img {
+        width: 100%;
+    }
+    .numbers {
+        margin: 0 auto;
+        width: 100px;
+        border: 5px dotted #ffffbb;
+        border-radius: 50%;
+        height: 100px;
+        display: flex;
+    }
+    .numbers span {
+        text-align: center;
+        width: 100%;
+        float: none;
+        vertical-align: middle;
+        color: #ffffbb;
+        font-family: TheSans-8ExtraBold;
+        font-size: 75px;
+        line-height: 65px;
+    }
+    .heading-cm::before {
+        position: absolute;
+        content: " ";
+        background: url(../img/pattern-top01-golden.png);
+        width: 200px;
+        top: -53px;
+        margin: auto;
+        height: 31px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .heading-cm {
+        font-family: 'TheSans-8ExtraBold';
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        color: #ffffbb;
+        position: relative;
+        text-transform: uppercase;
+        margin: 80px auto 0;
+    }
+    .para-cm {
+        font-family: 'TheSans-5Regular';
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+        margin: 20px auto 0;
+        width: 75%;
+    }
+    .icon-cm {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:360px){
+    .section-header::before {
+        width: 160px;
+        height: 26px;
+        top: -34px;
+        background-size: contain;
+    }
+    .heading-cm::before {
+        width: 160px;
+        height: 26px;
+        background-size: contain;
+    }
+    .section1-banner {
+        background-size: cover;
+        background-position: 55% 100%;
+    }
+    .cust-txt {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .section-header h2 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .section2 h4 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .heading-cm {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .para-cm {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

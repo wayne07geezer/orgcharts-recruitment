@@ -1,0 +1,185 @@
+body{
+	overflow-x:hidden;
+	position: relative;
+    font-family: 'TheSans-5Regular';
+}
+a,a:focus,a:active,a:hover{
+	outline:none;
+	text-decoration:none;
+    color: #000;
+}
+.main-container, .org-chart-nav{
+    display: none;
+}
+
+@media (max-width:480px){
+    .main-container, .org-chart-nav{
+        display: block;
+    }
+    .navbar-toggle {
+        position: absolute;
+        float: none;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        right: 0;
+        z-index: 2;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #000;
+        border-radius: 1px;
+        display: block;
+        height: 3px;
+        margin: 8px 0;
+        width: 40px;
+    }
+    /*nav*/
+    .mob_nav{
+        display: block;
+    }
+    #mobile-nav-modal-wrap {
+        bottom: 0;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: height 0.2s ease 0s, margin-top 0.2s ease 0s;
+        width: 85%;
+        z-index: 10001;
+        background-color: #fefaca;
+        -webkit-box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.75);
+    }
+    #mobile-nav-modal-wrap #mobile-nav-wrap {
+        font-size: 32px;
+        height: 500px;
+        margin-top: 55px;
+        position: absolute;
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .close_img {
+        float: right;
+        margin-right: 32px;
+        padding: 25px 0 0;
+        width: 22px;
+    }
+    #navbar.collapse.navbar-collapse{
+        margin-top: 40px;
+    }
+    .mobile-nav-wrap h6{
+        font-family: 'TheSans-8ExtraBold';
+        color: #000;
+        font-size: 28px;
+        padding: 8px 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .nav.navbar-nav .nav_link{
+        position: relative;
+        background-color: transparent;
+    }
+    .nav.navbar-nav .nav_link::before{
+        position: absolute;
+        content: " ";
+        background-color: #8b2d2d;
+        height: 1px;
+        width: 100%;
+        left: 50px;
+        margin: auto;
+        bottom: 0;
+    }
+    .nav.navbar-nav .nav_link:last-child::before{
+        background-color: transparent;
+    }
+    .nav.navbar-nav .nav_link a{
+        background-color: transparent;
+        font-family: 'TheSans-6SemiBold';
+        color: #000;
+        font-size: 18px;
+        padding: 20px 50px;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: left;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    .nav.navbar-nav .nav_link a:hover{
+        color: rgba(139,45,45,0.9);
+    }
+
+    /**/
+    .logos {
+        width: 100%;
+    }
+    .navigation {
+        background-color: #3c3b3b;
+    }
+    .navigation-inner {
+        width: 280px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: table;
+    }
+    .arrow-footer {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        transition: all .3s ease;
+    }
+    .arrow-footer img {
+        width: 100%;
+    }
+    .arrow-footer-left {
+        float: left;
+    }
+    .arrow-footer-right {
+        float: right;
+    }
+    .navigation a:hover{
+        opacity: 0.3;
+    }
+    .navigation .number {
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        font-family: TheSans-8ExtraBold;
+        font-size: 34px;
+        position: relative;
+        top: 5px;
+        color: #5a5a5a;
+        margin: 0;
+    }
+    .custom-num {
+        color: #fffdc3;
+    }
+}
+
+@media (max-width:414px) {
+
+}
+
+@media (max-width:375px) {
+
+}
+
+@media (max-width:360px) {
+    .navigation .number {
+        width: 130px;
+    }
+    .navigation-inner {
+        width: 250px;
+    }
+}
+
+@media (max-width:320px) {
+
+}
